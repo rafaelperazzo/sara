@@ -1,0 +1,178 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f7fafc;
+}
+
+.header {
+  background: #2d3748;
+  color: white;
+  padding: 0;
+}
+
+.headerContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.btnLogout {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.btnLogout:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hint {
+  background: #ebf4ff;
+  border: 1px solid #bee3f8;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: #2b6cb0;
+  margin-bottom: 0.75rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  padding: 0.6rem 1.25rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.activeTab {
+  color: #2b6cb0;
+  border-bottom-color: #2b6cb0;
+}
+
+.loading {
+  text-align: center;
+  color: #718096;
+  padding: 3rem 0;
+}
+
+/* Mini card de ações da reserva */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.actionsCard {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.actionsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.resp {
+  color: #718096;
+  font-weight: 400;
+}
+
+.dateLabel {
+  font-size: 0.8rem;
+  color: #718096;
+  margin: 0 0 1rem;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #718096;
+  line-height: 1;
+  padding: 0;
+}
+
+.actionsBtns {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btnEdit {
+  flex: 1;
+  background: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnEdit:hover { background: #2b6cb0; }
+
+.btnDel {
+  flex: 1;
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnDel:hover { background: #c53030; }

@@ -1,0 +1,41 @@
+.cell {
+  border: 1px solid #e2e8f0;
+  min-height: 100px;
+  padding: 4px;
+  background: white;
+  vertical-align: top;
+  position: relative;
+}
+
+.adminCell {
+  cursor: pointer;
+}
+
+.adminCell:hover {
+  background: #f7fafc;
+}
+
+.dayNumber {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 4px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.today {
+  background: #3182ce;
+  color: white;
+  font-weight: 700;
+}
+
+.chips {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
