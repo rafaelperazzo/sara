@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { CalendarHeader } from '../components/calendar/CalendarHeader'
 import { CalendarGrid } from '../components/calendar/CalendarGrid'
 import { ReservationDetail } from '../components/modals/ReservationDetail'
@@ -10,6 +11,7 @@ import styles from './PublicPage.module.css'
 const TABS = ['Calendário', 'Relatório de Utilização']
 
 export function PublicPage() {
+  const navigate = useNavigate()
   const today = new Date()
   const [year, setYear] = useState(today.getFullYear())
   const [month, setMonth] = useState(today.getMonth())
@@ -28,9 +30,6 @@ export function PublicPage() {
     else setMonth(m => m + 1)
   }
 
-  // Lista plana de todas as reservas do mês
-  const allReservations = Array.from(reservationsMap.values()).flat()
-
   return (
     <div className={styles.page}>
       <header className={styles.header}>
@@ -39,9 +38,9 @@ export function PublicPage() {
             <h1 className={styles.title}>Auditório DC/UFRPE</h1>
             <p className={styles.subtitle}>Calendário de Reservas</p>
           </div>
-          <a href={`mailto:${CONTACT_EMAIL}`} className={styles.contactLink}>
-            Solicitar Reserva
-          </a>
+          <button className={styles.contactLink} onClick={() => navigate('/admin')}>
+            Área Administrativa
+          </button>
         </div>
       </header>
 

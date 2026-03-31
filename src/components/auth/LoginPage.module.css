@@ -11,7 +11,7 @@
   border-radius: 8px;
   padding: 2rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -26,6 +26,72 @@
 .subtitle {
   text-align: center;
   color: #666;
-  margin: 0 0 1.5rem;
-  font-size: 0.9rem;
+  margin: 0 0 1.75rem;
+  font-size: 0.875rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.field input {
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+  color: #2d3748;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+}
+
+.error {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  color: #c53030;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.btnSubmit {
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.65rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  transition: background 0.15s;
+}
+
+.btnSubmit:hover:not(:disabled) {
+  background: #2c5282;
+}
+
+.btnSubmit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
 }
