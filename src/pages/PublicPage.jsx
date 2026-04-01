@@ -36,7 +36,7 @@ export function PublicPage() {
         <div className={styles.headerContent}>
           <div>
             <h1 className={styles.title}>Auditório DC/UFRPE</h1>
-            <p className={styles.subtitle}>Calendário de Reservas</p>
+            <p className={styles.subtitle}>Sistema de Agendamento de Reservas do Auditório</p>
           </div>
           <button className={styles.contactLink} onClick={() => navigate('/admin')}>
             Área Administrativa
@@ -76,8 +76,11 @@ export function PublicPage() {
 
       <footer className={styles.footer}>
         <p>
-          Para reservar o auditório, envie um e-mail para{' '}
+          Para solicitar uma reserva, consulte o horário desejado e envie um e-mail para{' '}
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+        </p>
+        <p>
+          <a href={`https://dc.ufrpe.br`}>Departamento de Computação - UFRPE</a>
         </p>
       </footer>
 
